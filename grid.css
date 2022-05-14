@@ -1,0 +1,37 @@
+.box {
+    background-color: bisque;
+    margin: 15px;
+}
+/* Podstawowe ustawienie grida  */
+.grid {
+    display: grid;  /* ustawiamy display na grid */
+   /* grid-template-columns: auto auto auto;   ustawia 3 kolumny o automatycznej szerokości*/
+   grid-template-columns: 33% 33% 33%;
+}
+
+.item-layout {
+    background-color: rgba(0, 0, 255, 0.278);
+    font-size: 40px;
+    
+}
+.grid-layout {
+    background-color: rgba(255, 0, 0, 0.329);
+    display: grid;
+  grid-gap: 15px;    /* odległośc pomiędzy el. w gridzie*/
+    /* grid-row-gap: 25px;
+    grid-column-gap: 2px; */
+    padding: 15px;
+    
+}
+.item-layout-1 {
+    grid-row: 1; /* ustawiamy div w pierwszym rzędzie */
+    grid-column: 1 / span 2; /* ustawiamy od pierszej kolumnie a  / span 2 mówi że mają to być 2 komórki  */
+}
+.item-layout-2 {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+}
+.item-layout-5 {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+}
